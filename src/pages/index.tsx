@@ -1,15 +1,20 @@
-import yayJpg from '../assets/yay.jpg';
+import { useMount } from "ahooks";
+import Page from "./Charts";
+import ThreeDemo from "./ThreeDemo";
+import Vertex from "./Vertex";
+
 
 export default function HomePage() {
+
+  useMount(() => {
+    
+  });
+
   return (
     <div>
-      <h2>Yay! Welcome to umi!</h2>
-      <p>
-        <img src={yayJpg} width="388" />
-      </p>
-      <p>
-        To get started, edit <code>pages/index.tsx</code> and save to reload.
-      </p>
+      {/* <Vertex></Vertex> */}
+      <ThreeDemo />
+      {/* <Page /> */}
     </div>
   );
 }
